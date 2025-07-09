@@ -1,0 +1,364 @@
+#*********************************************************
+#
+# ステージ情報
+#
+#*********************************************************
+
+#*********************************************************
+# モデル
+#*********************************************************
+MODEL_SET
+POS = 0.000 0.000 0.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 392.000 0.000 0.001
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -394.000 0.000 -0.001
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -788.000 0.000 -0.002
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 786.000 0.000 0.002
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 0.000 12.000 -48.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -394.000 12.000 -48.001
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -788.000 12.000 -48.002
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 392.000 12.000 -47.999
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 786.000 12.000 -47.999
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -529.950 0.000 257.373
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\bill_big_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 510.050 0.000 257.373
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\bill_big_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1182.000 0.000 -0.003
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1178.000 0.000 0.003
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1178.000 12.000 -47.998
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1182.000 12.000 -48.002
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1555.775 0.000 259.999
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\bill_big_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1532.046 0.000 251.006
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\bill_big_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1.245 0.000 -335.119
+ROT = 0.000 -3.142 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 395.245 0.000 -335.119
+ROT = 0.000 -3.142 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 789.245 0.000 -335.119
+ROT = 0.000 -3.142 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1183.245 0.000 -335.119
+ROT = 0.000 -3.142 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -392.755 0.000 -335.119
+ROT = 0.000 -3.142 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -786.755 0.000 -335.119
+ROT = 0.000 -3.142 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1180.755 0.000 -335.119
+ROT = 0.000 -3.142 0.000
+FILE_NAME = data\model\object\sideWalk_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1180.266 10.000 -288.539
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -786.266 10.000 -288.539
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -394.266 10.000 -288.539
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -0.266 10.000 -288.539
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 391.734 10.000 -288.539
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 781.734 10.000 -288.539
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1173.734 10.000 -288.539
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\curb.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -0.000 0.000 -42.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -390.000 0.000 -42.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -782.000 0.000 -42.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1180.000 0.000 -42.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 394.000 0.000 -42.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 784.000 0.000 -42.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1174.000 0.000 -42.000
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1184.000 0.000 -296.000
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 788.000 0.000 -296.000
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 396.000 0.000 -296.000
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 2.000 0.000 -296.000
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -392.000 0.000 -296.000
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -786.000 0.000 -296.000
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1182.000 0.000 -296.000
+ROT = 0.000 3.142 0.000
+FILE_NAME = data\model\object\fence_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1243.120 0.000 -83.920
+ROT = 0.000 0.000 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1227.337 34.000 -131.075
+ROT = 0.000 -1.885 0.000
+FILE_NAME = data\model\object\warning_stick_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1211.333 0.000 -177.897
+ROT = 0.000 -2.168 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1182.233 0.000 -257.897
+ROT = 0.000 -1.288 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1167.844 32.000 -209.905
+ROT = 0.000 -1.288 0.000
+FILE_NAME = data\model\object\warning_stick_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = -1154.317 0.000 -161.581
+ROT = 0.000 -1.634 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1220.633 0.000 -262.428
+ROT = 0.000 -0.031 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1220.158 32.000 -212.764
+ROT = 0.000 1.539 0.000
+FILE_NAME = data\model\object\warning_stick_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1219.022 0.000 -164.115
+ROT = 0.000 1.665 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1176.305 0.000 -73.011
+ROT = 0.000 1.539 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1170.646 34.000 -120.779
+ROT = 0.000 1.665 0.000
+FILE_NAME = data\model\object\warning_stick_001.x
+MODEL_SET_END
+
+MODEL_SET
+POS = 1165.088 0.000 -170.151
+ROT = 0.000 1.508 0.000
+FILE_NAME = data\model\object\cone_001.x
+MODEL_SET_END
+
+#*********************************************************
+# メッシュフィールド
+#*********************************************************
+MESHFIELD_SET
+FILE_NAME = data\text\stage_load\meshFiled_000.txt
+MESHFIELD_SET_END
+
