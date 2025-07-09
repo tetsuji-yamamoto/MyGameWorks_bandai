@@ -79,6 +79,7 @@ private:
 	static CObject* m_aPCur[PRIORITY_MAX];	// 最後尾のアドレス
 	CObject* m_pPrev;						// 前のオブジェクトのポインタ
 	CObject* m_pNext;						// 次のオブジェクトのポインタ
+	bool m_bDeath;							//	死亡フラグ
 
 	static int m_nNumAll;	// オブジェクトの総数
 	int m_nID;				// 自分自身のID

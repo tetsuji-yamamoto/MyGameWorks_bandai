@@ -41,6 +41,7 @@ CObject::CObject(int nPriority)
 	// 最後尾のオブジェクトを自分自身に設定
 	m_aPCur[nPriority] = this;
 
+	m_bDeath = false;			// 死んでない状態
 	m_type = TYPE_NONE;			// タイプを設定
 	m_nPriority = nPriority;	// 優先度
 	m_nNumAll++;				// 総数をカウントアップ
@@ -83,8 +84,11 @@ void CObject::ReleaseAll(void)
 			// 次のオブジェクトポインタを一時保存
 			CObject* pObjectNext = pObject->m_pNext;
 
-			// 修了処理
+			// 終了処理
 			pObject->Uninit();
+
+			// メモリの削除
+			delete pObject;
 
 			// 次のオブジェクトを代入
 			pObject = pObjectNext;
@@ -130,15 +134,48 @@ void CObject::UpdateAll(void)
 	{
 		// 先頭のオブジェクト代入
 		CObject* pObject = m_aPTop[nCntPri];
-		
+
 		// 次のオブジェクトがNULLになるまでループする
 		while (pObject != NULL)
 		{
 			// 次のオブジェクトポインタを一時保存
 			CObject* pObjectNext = pObject->m_pNext;
 
-			// 更新処理
-			pObject->Update();
+			// 死んでいなければ更新する
+			if (pObject->m_bDeath != true)
+			{
+				// 更新処理
+				pObject->Update();
+			}
+
+			// 死亡フラグが立っていたら削除
+			if (pObject->m_bDeath == true)
+			{
+				// 先頭がなくなる場合
+				if (pObject->m_pPrev == NULL && pObject->m_pNext != NULL)
+				{
+					pObject->m_pNext->m_pPrev = NULL;
+					m_aPTop[nCntPri] = pObject->m_pNext;
+				}
+				// 最後尾がなくなる場合
+				else if (pObject->m_pPrev != NULL && pObject->m_pNext == NULL)
+				{
+					pObject->m_pPrev->m_pNext = NULL;
+					m_aPCur[nCntPri] = pObject->m_pPrev;
+				}
+				// リストの途中の場合
+				else if (pObject->m_pPrev != NULL && pObject->m_pNext != NULL)
+				{
+					pObject->m_pNext->m_pPrev = pObject->m_pPrev;
+					pObject->m_pPrev->m_pNext = pObject->m_pNext;
+				}
+
+				// このオブジェクトを破棄
+				delete pObject;
+
+				// 総数カウントダウン
+				m_nNumAll--;
+			}
 
 			// 次のオブジェクトを代入
 			pObject = pObjectNext;
@@ -199,36 +236,39 @@ void CObject::DrawAll(void)
 //**********************************************
 void CObject::Release(void)
 {
-	// 自信をリストから削除
+	// 死んでいる状態にする
+	m_bDeath = true;
 
-	// 優先度を取得
-	int nPriority = GetPriority();
+	//// 自信をリストから削除
 
-	// リストをつなげる
-	// 先頭がなくなる場合
-	if (m_pPrev == NULL && m_pNext != NULL)
-	{
-		m_pNext->m_pPrev = NULL;
-		m_aPTop[nPriority] = m_pNext;
-	}
-	// 最後尾がなくなる場合
-	else if (m_pPrev != NULL && m_pNext == NULL)
-	{
-		m_pPrev->m_pNext = NULL;
-		m_aPCur[nPriority] = m_pPrev;
-	}
-	// リストの途中の場合
-	else if (m_pPrev != NULL && m_pNext != NULL)
-	{
-		m_pNext->m_pPrev = m_pPrev;
-		m_pPrev->m_pNext = m_pNext;
-	}
+	//// 優先度を取得
+	//int nPriority = GetPriority();
 
-	// 総数カウントダウン
-	m_nNumAll--;
+	//// リストをつなげる
+	//// 先頭がなくなる場合
+	//if (m_pPrev == NULL && m_pNext != NULL)
+	//{
+	//	m_pNext->m_pPrev = NULL;
+	//	m_aPTop[nPriority] = m_pNext;
+	//}
+	//// 最後尾がなくなる場合
+	//else if (m_pPrev != NULL && m_pNext == NULL)
+	//{
+	//	m_pPrev->m_pNext = NULL;
+	//	m_aPCur[nPriority] = m_pPrev;
+	//}
+	//// リストの途中の場合
+	//else if (m_pPrev != NULL && m_pNext != NULL)
+	//{
+	//	m_pNext->m_pPrev = m_pPrev;
+	//	m_pPrev->m_pNext = m_pNext;
+	//}
 
-	// 自分自信を破棄
-	delete this;
+	//// 総数カウントダウン
+	//m_nNumAll--;
+
+	//// 自分自信を破棄
+	//delete this;
 
 	//int nIdx = this->m_nID;
 	//int nPri = this->m_nPriority;

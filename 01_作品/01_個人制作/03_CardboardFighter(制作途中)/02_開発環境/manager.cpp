@@ -204,12 +204,16 @@ HRESULT CManager::Init(HINSTANCE hinstance, HWND hWnd, BOOL bWindow)
 
 	m_pStage->Init("data\\text\\stage_load\\stage_000.txt");
 
-	m_pPlayer->Init(D3DXVECTOR3(0.0f,0.0f,-80.0f), D3DXVECTOR3_NULL,60, "data\\motion\\motion_player_001.txt");
 	
 	CEnemy* pEnemy = new CEnemy;
 	pEnemy->Init(D3DXVECTOR3(0.0f, 0.0f, -80.0f), D3DXVECTOR3_NULL, 60, "data\\motion\\motion_enemy_armor.txt");
 	m_pEnemy.push_back(pEnemy);
 
+	m_pPlayer->Init(D3DXVECTOR3(0.0f,0.0f,-80.0f), D3DXVECTOR3_NULL,60, "data\\motion\\motion_player_001.txt");
+
+	/*CEnemy* pEnemy2 = new CEnemy;
+	pEnemy2->Init(D3DXVECTOR3(0.0f, 0.0f, -80.0f), D3DXVECTOR3_NULL, 60, "data\\motion\\motion_enemy_armor.txt");
+	m_pEnemy.push_back(pEnemy2);*/
 	return S_OK;
 }
 

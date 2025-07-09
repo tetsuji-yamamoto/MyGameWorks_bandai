@@ -186,38 +186,38 @@ void CEnemy::Update()
 	m_bMove = false;			// 移動していない状態にする
 	float fAngleMove = 0.0f;	// 移動する角度
 
-	// 攻撃のアップデート
-	m_pAttack->Update();
+	//// 攻撃のアップデート
+	//m_pAttack->Update();
 
-	// 攻撃範囲にプレイヤーがいて、攻撃していない状態であれば
-	if (IsAttackPlayer() == true)
-	{
-		// 攻撃モーションに変更
-		m_pMotion->SetMotionblend(m_pBlendMotion, MOTION_ATTACK, 20);
-		m_pAttack->Set(5,120,130,5);
-	}
-	// 攻撃していない状態であれば
-	else if(m_pAttack->GetIsAttackEnd() == true)
-	{
-		// 動く状態であれば
-		if (m_bMove == true)
-		{
-			// 移動量の計算
-			move.x += sinf(fAngleMove) * fMovement;
-			move.z += cosf(fAngleMove) * fMovement;
+	//// 攻撃範囲にプレイヤーがいて、攻撃していない状態であれば
+	//if (IsAttackPlayer() == true)
+	//{
+	//	// 攻撃モーションに変更
+	//	m_pMotion->SetMotionblend(m_pBlendMotion, MOTION_ATTACK, 20);
+	//	m_pAttack->Set(5,120,130,5);
+	//}
+	//// 攻撃していない状態であれば
+	//else if(m_pAttack->GetIsAttackEnd() == true)
+	//{
+	//	// 動く状態であれば
+	//	if (m_bMove == true)
+	//	{
+	//		// 移動量の計算
+	//		move.x += sinf(fAngleMove) * fMovement;
+	//		move.z += cosf(fAngleMove) * fMovement;
 
-			// 角度の更新
-			m_pCharacter->SetRotationDestY(fAngleMove + D3DX_PI);
+	//		// 角度の更新
+	//		m_pCharacter->SetRotationDestY(fAngleMove + D3DX_PI);
 
-			// 走るモーションに変更
-			m_pMotion->SetMotionblend(m_pBlendMotion, MOTION_MOVE, 20);
-		}
-		else
-		{
-			// 待機モーションに変更
-			m_pMotion->SetMotionblend(m_pBlendMotion, MOTION_NONE, 60);
-		}
-	}
+	//		// 走るモーションに変更
+	//		m_pMotion->SetMotionblend(m_pBlendMotion, MOTION_MOVE, 20);
+	//	}
+	//	else
+	//	{
+	//		// 待機モーションに変更
+	//		m_pMotion->SetMotionblend(m_pBlendMotion, MOTION_NONE, 60);
+	//	}
+	//}
 
 	// 角度の更新
 	m_pCharacter->UpdateRotaition(0.3f);
@@ -302,19 +302,19 @@ void CEnemy::Update()
 	// モーションのアップデート
 	m_pMotion->UpdateMotionModelBlend(m_pBlendMotion);
 
-	// 攻撃判定が出る時間ならを出していい場合なら
-	if (m_pAttack->GetIsAttackTime() == true)
-	{
-		// 自身の攻撃がプレイヤーへ当たっているか調べる
-		if (IsCollisionAttackPlayer() == true)
-		{
-			// 攻撃が終わった状態にする
-			m_pAttack->SetIsAttackEnd(false);
+	//// 攻撃判定が出る時間ならを出していい場合なら
+	//if (m_pAttack->GetIsAttackTime() == true)
+	//{
+	//	// 自身の攻撃がプレイヤーへ当たっているか調べる
+	//	if (IsCollisionAttackPlayer() == true)
+	//	{
+	//		// 攻撃が終わった状態にする
+	//		m_pAttack->SetIsAttackEnd(false);
 
-			// プレイヤーのヒット処理
-			pPlayer->Hit(0,30);
-		}
-	}
+	//		// プレイヤーのヒット処理
+	//		pPlayer->Hit(0,30);
+	//	}
+	//}
 }
 
 //**********************************************

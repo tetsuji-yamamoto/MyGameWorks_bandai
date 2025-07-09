@@ -14,7 +14,7 @@
 //***********************************************
 // 丸影
 //***********************************************
-CShadow::CShadow() : CObject(CObject::PRIORITY_4)
+CShadow::CShadow() : CObject(CObject::PRIORITY_3)
 {
 	m_pVtxBuff = NULL;							// 頂点バッファへのポインタ
 	memset(m_mtxWorld,0,sizeof(m_mtxWorld)) ;	// ワールドマトリックス

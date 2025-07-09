@@ -63,6 +63,12 @@ void CCharacter::Uninit(void)
 		m_pState = NULL;
 	}
 
+	if (m_pShadow != NULL)
+	{
+		m_pShadow->Uninit();
+		m_pShadow = NULL;
+	}
+
 	delete this;
 }
 

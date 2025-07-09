@@ -62,7 +62,7 @@ private:
 	int m_nNumModel;				// モデル(パーツ)の総数
 
 	std::vector<CCollisionSpher*> m_pColiSpher;		// 球の当たり判定(ダメージ用)
-	CCollisionCylinder* m_pColiCyli;	// 円柱の当たり判定(体用)
+	CCollisionCylinder* m_pColiCyli;				// 円柱の当たり判定(体用)
 };
 
 #endif // !PLAYER_H_
