@@ -1,0 +1,11 @@
+10
+data\\model\\andrei\\FieldObject\\Rocket.x
+data\\model\\andrei\\FieldObject\\Sa11Em.x
+data\\model\\andrei\\FieldObject\\Hexagon.x
+data\\model\\andrei\\FieldObject\\Force_Gate.x
+data\\model\\andrei\\FieldObject\\Stones\\StoneGroup1.x
+data\\model\\andrei\\FieldObject\\Stones\\StoneGroup2.x
+data\\model\\andrei\\FieldObject\\Stones\\StoneType1.x
+data\\model\\andrei\\FieldObject\\Stones\\StoneType2.x
+data\\model\\sato\\Block.x
+data\\misaki\\gate001.x
