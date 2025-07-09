@@ -30,7 +30,7 @@ CHARACTERSET
 	NUM_PARTS = 8					# パーツ数
 	MOVE = 3.0						# 移動量
 	JUMP = 11.75					# ジャンプ量
-	RADIUS = 60.0					# 半径
+	RADIUS = 70.0					# 半径
 	HEIGHT = 150.0					# 高さ
 
 	PARTSSET

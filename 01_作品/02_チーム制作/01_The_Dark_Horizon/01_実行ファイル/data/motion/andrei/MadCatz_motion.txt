@@ -50,7 +50,7 @@ CHARACTERSET
 	MOVE = 0.50						# 移動量
 	JUMP = 8.25					# ジャンプ量
 	RADIUS = 100.0					# 半径
-	HEIGHT = 80.0					# 高さ
+	HEIGHT = 30.0					# 高さ
 	BLOWOFF = 6.50 8.65				# 吹っ飛び量
 	SOMERSAULT = 2.00 7.00			# バク宙量
 
