@@ -39,3 +39,5 @@
 
 # debug information files
 *.dwo
+/01_作品/01_個人制作/01_ChargeZubash/02_開発環境/Release
+/01_作品/01_個人制作/01_ChargeZubash/02_開発環境/Debug
