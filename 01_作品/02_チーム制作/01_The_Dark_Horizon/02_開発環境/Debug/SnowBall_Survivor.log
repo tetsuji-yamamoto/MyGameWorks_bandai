@@ -1,0 +1,19 @@
+﻿  bullet.cpp
+  enemy.cpp
+  game.cpp
+  main.cpp
+  player.cpp
+C:\Users\student\source\repos\SnowBall_Survivor\player.cpp(54,29): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+  shadow.cpp
+  timer.cpp
+C:\Users\student\source\repos\SnowBall_Survivor\timer.cpp(123,37): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\SnowBall_Survivor\timer.cpp(127,44): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\SnowBall_Survivor\timer.cpp(128,44): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\SnowBall_Survivor\timer.cpp(129,44): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\SnowBall_Survivor\timer.cpp(130,44): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\SnowBall_Survivor\timer.cpp(112,6): warning C4101: 'nCnt': ローカル変数は 1 度も使われていません。
+  title.cpp
+  tutorial.cpp
+  wave.cpp
+  コードを生成中...
+  SnowBall_Survivor.vcxproj -> C:\Users\student\source\repos\SnowBall_Survivor\Debug\SnowBall_Survivor.exe
