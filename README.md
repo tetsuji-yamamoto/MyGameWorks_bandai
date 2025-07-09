@@ -1,2 +1,2 @@
-# MyGameWorks_bandai
+# MyGameWorks_bandai_03
 バンダイナムコスタジオさんに送るゲーム作品のgit
