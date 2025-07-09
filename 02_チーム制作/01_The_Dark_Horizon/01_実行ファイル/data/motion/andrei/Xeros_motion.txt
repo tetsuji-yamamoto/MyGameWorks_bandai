@@ -1,0 +1,191 @@
+#==============================================================================
+#
+# 『モーションビューワ』スクリプトファイル [Xeros_motion.txt]
+# Author : Andrey vrm11xn
+#
+#==============================================================================
+SCRIPT			# この行は絶対消さないこと！
+
+#------------------------------------------------------------------------------
+# モデル数
+#------------------------------------------------------------------------------
+NUM_MODEL = 7
+
+#------------------------------------------------------------------------------
+# モデルファイル名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/model/andrei/Xeros/Body.x		
+MODEL_FILENAME = data/model/andrei/Xeros/Head.x
+MODEL_FILENAME = data/model/andrei/Xeros/Parent_Cube.x
+MODEL_FILENAME = data/model/andrei/Xeros/Hand_L.x		
+MODEL_FILENAME = data/model/andrei/Xeros/Hand_R.x
+MODEL_FILENAME = data/model/andrei/Xeros/Hand_Back.x
+MODEL_FILENAME = data/model/andrei/Xeros/Leg.x
+
+#------------------------------------------------------------------------------
+# テクスチャ数
+#------------------------------------------------------------------------------
+NUM_TEXTURE = 5
+
+#------------------------------------------------------------------------------
+# テクスチャファイル名
+#------------------------------------------------------------------------------
+TEXTURE_FILENAME = data/texture/andrei/stainless-steel.jpg	
+TEXTURE_FILENAME = data/texture/andrei/Code.jpg
+TEXTURE_FILENAME = data/texture/andrei/Chamber.jpg
+TEXTURE_FILENAME = data/texture/andrei/Uzumaki.jpg
+TEXTURE_FILENAME = data/texture/andrei/Gold.jpg
+
+#------------------------------------------------------------------------------
+# キャラクター情報
+#------------------------------------------------------------------------------
+CHARACTERSET
+	NUM_PARTS = 7					# パーツ数
+	MOVE = 2.50						# 移動量
+	JUMP = 10.25					# ジャンプ量
+	RADIUS = 500.0					# 半径
+	HEIGHT = 1000.0					# 高さ
+	BLOWOFF = 6.50 8.65				# 吹っ飛び量
+	SOMERSAULT = 2.00 7.00			# バク宙量
+
+	PARTSSET
+		INDEX = 0					# BODY
+		PARENT = -1					# (親) NONE
+		POS = 0.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET
+		INDEX = 1					# HEAD
+		PARENT = 0					# (親) BODY
+		POS = 0.0 50.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET
+		INDEX = 2					# PARENT CUBE
+		PARENT = -1					# (親) NONE
+		POS = 0.0 200.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET
+		INDEX = 3					# HAND L
+		PARENT = 2					# (親) PARENT CUBE
+		POS = 0.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET
+		INDEX = 4					# HAND R
+		PARENT = 2					# (親) PARENT CUBE
+		POS = 0.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET
+		INDEX = 5					# HAND BACK
+		PARENT = 2					# (親) PARENT CUBE
+		POS = 0.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET
+		INDEX = 6					# LEG
+		PARENT = 2					# (親) PARENT CUBE
+		POS = 0.0 100.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+END_CHARACTERSET
+
+#------------------------------------------------------------------------------
+# モーション情報
+#------------------------------------------------------------------------------
+
+#========================================
+# [0] ニュートラルモーション
+#========================================
+MOTIONSET
+	LOOP = 0		# ループするかどうか[0:ループしない / 1:ループする]
+	NUM_KEY = 2		# キー数
+
+	KEYSET			# --- << KEY : 0 / 2 >> ---
+		FRAME = 1200
+		KEY	# ----- [ 0 ] -----
+			POS = 0.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 1 ] -----
+			POS = 0.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 2 ] -----
+			POS = 0.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 3 ] -----
+			POS = 0.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 4 ] -----
+			POS = 0.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 5 ] -----
+			POS = 0.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 6 ] -----
+			POS = 0.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+	END_KEYSET
+
+	KEYSET			# --- << KEY : 1 / 2 >> ---
+		FRAME = 1200
+		KEY	# ----- [ 0 ] -----
+			POS = 0.00 250.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 1 ] -----
+			POS = 0.00 450.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 2 ] -----
+			POS = 0.00 250.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 3 ] -----
+			POS = 300.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 4 ] -----
+			POS = -300.00 0.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 5 ] -----
+			POS = 0.00 0.00 300.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY	# ----- [ 6 ] -----
+			POS = 0.00 -400.00 0.00
+			ROT = 0.00 0.00 0.00
+		END_KEY
+	END_KEYSET
+END_MOTIONSET
+
+
+END_SCRIPT		# この行は絶対消さないこと！
